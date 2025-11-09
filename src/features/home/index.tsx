@@ -1,9 +1,9 @@
 import HeroHome from "./HeroHome"
-import HomeService from "./HomeService"
+import HomeService from "../../components/ServiceSection"
 import MenuPreview from "./MenuPreview"
 import HomeAbout from "./HomeAbout"
-import ParallaxHome from "./ParallaxHome"
-import TestimonyHome from "./TestimonyHome"
+import ParallaxHome from "../../components/ParallaxSection"
+import TestimonyHome from "../../components/TestimonySection"
 import FormReservation from "./FormReservation"
 
 export default function index() {

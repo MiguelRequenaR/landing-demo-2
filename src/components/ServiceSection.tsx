@@ -22,7 +22,7 @@ const services = [
   },
 ]
 
-export default function HomeService() {
+export default function ServiceSection() {
   return (
     <main className="bg-primary py-20">
       <div className="max-w-7xl mx-auto pb-30">

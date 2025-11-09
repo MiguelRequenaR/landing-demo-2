@@ -1,38 +1,43 @@
 import { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import Button from "./Button"
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
 
   const links = [
-    "Inicio",
-    "Sobre nosotros",
-    "Blog",
-    "Contacto"
+    { label: "Inicio", path: "/" },
+    { label: "Nosotros", path: "/nosotros" },
+    { label: "Blog", path: "/blog" },
+    { label: "Contacto", path: "/contacto" }
   ];
 
   return (
     <header className="bg-primary fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-5 px-4 md:px-0">
         <div>
-          <img src="/logoFoodie.svg" alt="logo" />
+          <Link to="/">
+            <img src="/logoFoodie.svg" alt="logo" />
+          </Link>
         </div>
 
         <nav className="hidden md:block">
           <ul className="text-white flex gap-4 font-semibold">
-            {links.map((label, idx) => (
-              <li
-                key={label}
-                className={`
-                  transition-colors duration-500 cursor-pointer 
-                  hover:text-secondary 
-                  ${activeIndex === idx ? 'text-secondary' : ''}
-                `}
-                onClick={() => setActiveIndex(idx)}
-              >
-                {label}
+            {links.map((link) => (
+              <li key={link.label}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `
+                    transition-colors duration-500 cursor-pointer 
+                    hover:text-secondary 
+                    ${isActive ? 'text-secondary' : ''}
+                  `
+                  }
+                >
+                  {link.label}
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -42,7 +47,7 @@ export default function NavBar() {
             Ver menú
           </Button>
         </div>
-        <button 
+        <button
           className="md:hidden flex items-center justify-center text-white"
           onClick={() => setMenuOpen(true)}
           aria-label="Abrir menú"
@@ -70,20 +75,21 @@ export default function NavBar() {
         </div>
         <nav className="flex-1 flex flex-col items-center justify-center">
           <ul className="flex flex-col gap-8 text-white text-2xl font-semibold">
-            {links.map((label, idx) => (
-              <li
-                key={label}
-                className={`
-                  cursor-pointer transition-colors duration-300
-                  hover:text-secondary 
-                  ${activeIndex === idx ? 'text-secondary' : ''}
-                `}
-                onClick={() => {
-                  setActiveIndex(idx);
-                  setMenuOpen(false);
-                }}
-              >
-                {label}
+            {links.map((link) => (
+              <li key={link.label}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `
+                    cursor-pointer transition-colors duration-300
+                    hover:text-secondary 
+                    ${isActive ? 'text-secondary' : ''}
+                  `
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -102,7 +108,7 @@ export default function NavBar() {
                 transition-transform duration-500 ease-in-out pointer-events-none
               "
             />
-            <span 
+            <span
               className="relative z-10 transition-colors duration-500"
             >
               Ver menú

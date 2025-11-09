@@ -20,7 +20,7 @@ const testimonials = [
   },
 ]
 
-export default function TestimonyHome() {
+export default function TestimonySection() {
   return (
     <main className="bg-primary py-20 pb-30">
       <div className="max-w-7xl mx-auto">

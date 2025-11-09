@@ -1,6 +1,6 @@
 import Form from '@/components/Form'
 
-export default function FormReservation() {
+export default function FormAbout() {
   return (
     <main className="bg-tertiary py-20">
       <div className="max-w-7xl mx-auto">

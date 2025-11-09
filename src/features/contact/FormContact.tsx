@@ -1,8 +1,8 @@
 import Form from '@/components/Form'
 
-export default function FormReservation() {
+export default function FormContact() {
   return (
-    <main className="bg-tertiary py-20">
+    <main className="bg-primary py-30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center" data-aos="fade-down">
           <span className="text-secondary">Reserva una mesa</span>
