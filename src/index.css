@@ -4,6 +4,7 @@
 @theme {
   --color-primary: #0b1315;
   --color-secondary: #efc9a4;
+  --color-tertiary: #0f1d22;
 }
 
 h1, h2, h3, h4, h5, h6 {

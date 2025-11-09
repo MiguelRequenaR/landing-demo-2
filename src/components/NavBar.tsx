@@ -9,7 +9,7 @@ export default function NavBar() {
   const links = [
     "Inicio",
     "Sobre nosotros",
-    "Servicios",
+    "Blog",
     "Contacto"
   ];
 
