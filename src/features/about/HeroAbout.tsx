@@ -1,4 +1,5 @@
 import Button from "@/components/Button"
+import { Link } from "react-router-dom";
 
 export default function HeroAbout() {
   return (
@@ -13,13 +14,15 @@ export default function HeroAbout() {
               La comida es un viaje de sabores que conecta a las personas y crea alegría. Nuestro equipo ofrece una experiencia gastronómica fresca e innolvidable.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button>
-                Reserva una mesa
-              </Button>
+              <Link to="/contacto">
+                <Button>
+                  Reserva una mesa
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="relative">
-            <div 
+            <div
               className="flex flex-col w-24 h-24 md:w-40 md:h-40 border border-dashed justify-center border-secondary rounded-full bg-tertiary 
               absolute top-5 left-23 md:top-5 md:left-15 "
               data-aos="zoom-in"
@@ -29,14 +32,14 @@ export default function HeroAbout() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" 
-                alt="heroImagen" 
+                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                alt="heroImagen"
                 className="w-40 md:w-70 absolute top-0 right-15 rounded-lg"
                 data-aos="fade-down-left"
               />
-              <img 
-                src="https://images.unsplash.com/photo-1543826173-70651703c5a4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=879" 
-                alt="heroImagen2" 
+              <img
+                src="https://images.unsplash.com/photo-1543826173-70651703c5a4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=879"
+                alt="heroImagen2"
                 className="w-40 md:w-70 absolute -bottom-74 left-20 md:bottom-10 md:left-10 rounded-lg"
                 data-aos="fade-up-right"
               />

@@ -10,7 +10,7 @@ export default function NavBar() {
     { label: "Inicio", path: "/" },
     { label: "Nosotros", path: "/nosotros" },
     { label: "Blog", path: "/blog" },
-    { label: "Contacto", path: "/contacto" }
+    { label: "Contacto", path: "/contacto" },
   ];
 
   return (
@@ -43,9 +43,11 @@ export default function NavBar() {
           </ul>
         </nav>
         <div className="hidden md:block">
-          <Button>
-            Ver menú
-          </Button>
+          <Link to="/menu">
+            <Button>
+              Ver menú
+            </Button>
+          </Link>
         </div>
         <button
           className="md:hidden flex items-center justify-center text-white"
@@ -95,25 +97,27 @@ export default function NavBar() {
           </ul>
         </nav>
         <div className="flex justify-center pb-8">
-          <button
-            className="relative overflow-hidden bg-secondary px-8 py-3 uppercase cursor-pointer border border-secondary group transition-colors duration-500 hover:text-white text-base"
-            onClick={() => setMenuOpen(false)}
-          >
-            <span
-              className="
+          <Link to="/menu">
+            <button
+              className="relative overflow-hidden bg-secondary px-8 py-3 uppercase cursor-pointer border border-secondary group transition-colors duration-500 hover:text-white text-base"
+              onClick={() => setMenuOpen(false)}
+            >
+              <span
+                className="
                 absolute inset-0 
                 bg-primary
                 translate-y-full
                 group-hover:translate-y-0
                 transition-transform duration-500 ease-in-out pointer-events-none
               "
-            />
-            <span
-              className="relative z-10 transition-colors duration-500"
-            >
-              Ver menú
-            </span>
-          </button>
+              />
+              <span
+                className="relative z-10 transition-colors duration-500"
+              >
+                Ver menú
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </header>

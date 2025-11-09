@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react"
 import Button from "@/components/Button"
 import { Phone } from "lucide-react"
+import { Link } from "react-router-dom";
 
 interface CounterProps {
   to: string | number
@@ -116,7 +117,7 @@ export default function HomeAbout() {
           <div className="flex flex-col justify-center gap-7" data-aos="fade-down" data-aos-delay="400">
             <div>
               <h2 className="text-white text-4xl md:text-5xl font-bold mt-3 text-center md:text-left">
-                Sabor refinado, sensación excepcional 
+                Sabor refinado, sensación excepcional
                 <span className="text-secondary font-normal"> donde la elegancia se une al sabor</span>
               </h2>
             </div>
@@ -130,10 +131,12 @@ export default function HomeAbout() {
               <p className="text-white text-sm">VIE - SAB: <span className="font-medium">10:00 AM - 11:00 PM</span></p>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
-              <Button>
-                Reserva una mesa
-              </Button>
-              <div className="flex items-center gap-2 bg-tertiary/80 rounded-lg px-3 py-2">
+              <Link to="/contacto">
+                <Button>
+                  Reserva una mesa
+                </Button>
+              </Link>
+              <div className="flex items-center gap-2 bg-tertiary/80 px-3 py-[10px]">
                 <Phone className="w-5 h-5 text-secondary" />
                 <span className="text-white font-medium">+51 987 654 321</span>
               </div>

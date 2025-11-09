@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import { Link } from "react-router-dom";
 
 const menu = [
   {
@@ -32,9 +33,11 @@ export default function MenuPreview() {
             <p className="text-white text-center md:text-left">Descubra nuestros servicios personalizados, diseñados para adaptarse al ritmo de su día.<br /> Desde desayunos energéticos hasta almuerzos satisfactorios y cenas elegantes.</p>
           </div>
           <div>
-            <Button>
-              Ver todo el menú
-            </Button>
+            <Link to="/menu">
+              <Button>
+                Ver todo el menú
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 p-4 md:p-0" data-aos="fade-up" data-aos-delay="400">

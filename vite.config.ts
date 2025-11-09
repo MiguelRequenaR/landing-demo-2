@@ -11,7 +11,12 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
+      buffer: 'buffer/' // Polyfill para Buffer en el navegador
     }
-  }
+  },
+  define: {
+    'global': 'globalThis', // Polyfill para global
+  },
+  assetsInclude: ['**/*.md'] // Permitir importar archivos .md
 })
