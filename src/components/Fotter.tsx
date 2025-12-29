@@ -33,7 +33,7 @@ export default function Fotter() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-4">
-          <p className="text-white px-4 text-center md:text-left">2025 ©Todos los derechos reservados. Desarrollado por <a href="https://grobles.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-secondary">Grobles Studio.</a></p>
+          <p className="text-white px-4 text-center md:text-left">2025 ©Todos los derechos reservados. Desarrollado por <a href="https://www.groblestudio.com/" target="_blank" rel="noopener noreferrer" className="text-secondary">Grobles Studio.</a></p>
           <div className="flex items-center justify-center gap-4">
             <Facebook className="w-6 h-6 text-secondary cursor-pointer" />
             <Instagram className="w-6 h-6 text-secondary cursor-pointer" />

@@ -2,19 +2,19 @@
 const testimonials = [
   {
     text: "La comida es deliciosa y la atención que brinda el personal es excelente. Buen ambiente y atención. Definitivamente volveré.",
-    image: "https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471",
+    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Miguel Angel",
     role: "Comensal",
   },
   {
     text: "La atención es excelente y la comida es deliciosa. Buen ambiente y atención. Definitivamente volveré.",
-    image: "https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471",
+    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Juan Perez",
     role: "Comensal",
   },
   {
     text: "El servicio es excelente y la comida es deliciosa. Buen ambiente y atención. Definitivamente volveré.",
-    image: "https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471",
+    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "John Doe",
     role: "Comensal",
   },
